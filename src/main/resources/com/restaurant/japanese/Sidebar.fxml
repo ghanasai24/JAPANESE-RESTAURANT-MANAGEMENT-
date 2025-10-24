@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.restaurant.japanese.ui.SidebarController"
+      alignment="TOP_CENTER" spacing="10" prefWidth="200.0"
+      style="-fx-background-color: #555; -fx-padding: 15;">
+
+    <Button fx:id="tableViewButton" text="Table View" onAction="#handleTableView" prefWidth="180.0" styleClass="sidebar-button"/>
+    <Button fx:id="kitchenViewButton" text="Kitchen Display" onAction="#handleKitchenView" prefWidth="180.0" styleClass="sidebar-button"/>
+    <Button fx:id="dashboardButton" text="Dashboard" onAction="#handleDashboard" prefWidth="180.0" styleClass="sidebar-button"/>
+    <Button fx:id="inventoryButton" text="Inventory" onAction="#handleInventory" prefWidth="180.0" styleClass="sidebar-button"/>
+    <Button text="Logout" onAction="#handleLogout" prefWidth="180.0" styleClass="sidebar-button" VBox.vgrow="ALWAYS" />
+
+</VBox>
